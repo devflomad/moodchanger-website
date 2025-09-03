@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --mc-bg: #0d2430;
+  --mc-accent: #2aa68a;
 }
 
 @theme inline {
@@ -19,8 +21,8 @@
   }
 }
 
-body {
-  background: var(--background);
+html, body {
+  background: var(--mc-bg);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }

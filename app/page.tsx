@@ -1,102 +1,102 @@
+import Link from "next/link";
 import Image from "next/image";
 
-export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+export default function Page() {
+  const canvaEmbed =
+    "https://www.canva.com/design/DAGbplfirz8/lSCilOKokFaeeRWKz4lJ4A/view?embed"; // Canva Share → More → Embed
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+  return (
+    <div className="min-h-screen bg-[#0d2430] text-white antialiased">
+      {/* Header */}
+      <header className="sticky top-0 z-[9999] border-b border-white/10 bg-[#0d2430] backdrop-blur-xl" style={{ position: 'sticky', zIndex: 9999 }}>
+        <div className="mx-auto flex max-w-7xl items-center justify-between" style={{ padding: '40px 80px' }}>
+          <div className="flex items-baseline font-bold tracking-[0.2em]">
+            <span className="text-2xl text-[#2aa68a]">MOOD</span><span className="text-2xl">CHANGER</span><span className="text-2xl text-[#2aa68a]">.AI</span>
+          </div>
+          <div className="flex items-center">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/flomadlogo.svg"
+              alt="Flomad Labs"
+              width={32}
+              height={32}
+              className="opacity-80 hover:opacity-100 transition-opacity brightness-0 invert"
+              style={{ filter: 'brightness(0) saturate(100%) invert(64%) sepia(14%) saturate(1465%) hue-rotate(126deg) brightness(91%) contrast(87%)' }}
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </header>
+
+      {/* Hero Section */}
+      <section className="relative">
+        {/* Background gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#2aa68a]/5 via-transparent to-[#0d2430]" />
+        
+        <div className="relative mx-auto max-w-7xl px-6 pt-64 pb-48 lg:pt-80 lg:pb-56">
+          {/* Hero Text */}
+          <div className="mb-12 text-center py-8">
+            <h1 className="mb-4 text-4xl font-bold leading-tight tracking-tight lg:text-5xl text-white">
+              Coming Soon
+            </h1>
+            <p className="mx-auto max-w-3xl text-lg leading-relaxed text-white/70 lg:text-xl">
+              We're building something amazing. While we craft the full experience, explore our presentation below to discover what MOODCHANGER.AI is all about.
+            </p>
+          </div>
+
+          {/* Video Section */}
+          <div className="mx-auto max-w-7xl">
+            <div className="group relative z-10 overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-3 shadow-2xl backdrop-blur-sm transition-all duration-500 hover:border-[#2aa68a]/30 hover:shadow-[#2aa68a]/20">
+              <div className="relative w-full overflow-hidden rounded-2xl" style={{ paddingTop: "45%" }}>
+                <iframe
+                  src={canvaEmbed}
+                  className="absolute left-0 top-0 h-full w-full border-0 z-0"
+                  allowFullScreen
+                  title="MOODCHANGER.AI Presentation"
+                />
+              </div>
+              
+              {/* Video overlay controls */}
+              <div className="mt-4 flex items-center justify-between px-2">
+                <div className="flex items-center gap-3">
+                  <div className="h-2 w-2 rounded-full bg-[#2aa68a] animate-pulse" />
+                  <span className="text-sm font-medium text-white/90">Live Presentation</span>
+                </div>
+                <a
+                  href={canvaEmbed}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group/link inline-flex items-center gap-2 rounded-full bg-[#2aa68a]/20 px-4 py-2.5 text-sm font-medium text-white transition-all duration-300 hover:bg-[#2aa68a]/30 hover:scale-105"
+                >
+                  <svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                  <span>Open presentation</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-white/10">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-8 py-16 text-sm text-white/70 md:flex-row">
+          <div className="flex items-center gap-2">
+            <span>© {new Date().getFullYear()} MoodChanger.AI</span>
+            <span className="text-white/50">•</span>
+            <span>A</span>
+            <Link
+              href="https://flomadlabs.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-[#2aa68a] transition-colors hover:text-[#2aa68a]/80"
+            >
+              Flomad Labs
+            </Link>
+            <span>product</span>
+          </div>
+          <div className="flex items-center gap-6">
+          </div>
+        </div>
       </footer>
     </div>
   );
