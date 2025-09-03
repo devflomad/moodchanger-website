@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MoodChanger.AI Website
 
-## Getting Started
+The official landing page for MoodChanger.AI - an innovative AI-powered platform for mood transformation and emotional wellness.
 
-First, run the development server:
+## 🌟 About
+
+MoodChanger.AI is a cutting-edge application that leverages artificial intelligence to help users understand, track, and improve their emotional well-being. This repository contains the marketing website built with modern web technologies.
+
+## 🚀 Tech Stack
+
+- **Framework**: [Next.js 15.5.2](https://nextjs.org) with App Router
+- **Language**: TypeScript
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com)
+- **Runtime**: React 19.1.0
+- **Package Manager**: pnpm
+- **Build Tool**: Turbopack (Next.js)
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- pnpm (recommended) or npm
+
+### Installation
+
+1. Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/devflomad/moodchanger-website.git
+cd moodchanger-website
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Install dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Run the development server:
 
-## Learn More
+```bash
+pnpm dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+1. Open [http://localhost:3000](http://localhost:3000) to view the website.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```text
+├── app/                    # Next.js App Router directory
+│   ├── layout.tsx         # Root layout component
+│   ├── page.tsx          # Homepage component
+│   ├── globals.css       # Global styles
+│   └── favicon.ico       # Site favicon
+├── public/               # Static assets
+│   ├── flomadlogo.svg   # Flomad Labs logo
+│   └── ...              # Other static files
+├── package.json         # Project dependencies and scripts
+└── README.md           # Project documentation
+```
 
-## Deploy on Vercel
+## 🎨 Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Modern Design**: Clean, professional landing page with gradient backgrounds and smooth animations
+- **Responsive Layout**: Optimized for all device sizes
+- **Interactive Presentation**: Embedded Canva presentation showcasing MoodChanger.AI
+- **Performance Optimized**: Built with Next.js 15 and Turbopack for fast loading
+- **Type Safety**: Full TypeScript implementation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📜 Available Scripts
+
+- `pnpm dev` - Start development server with Turbopack
+- `pnpm build` - Build production version
+- `pnpm start` - Start production server
+- `pnpm lint` - Run ESLint for code quality
+
+## 🏢 Company
+
+MoodChanger.AI is a product of [Flomad Labs](https://flomadlabs.com), a technology company focused on innovative AI solutions.
+
+## 📄 License
+
+© 2025 MoodChanger.AI. All rights reserved.
